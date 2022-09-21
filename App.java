@@ -4,6 +4,8 @@ public class App{
 
         System.out.println("Cachorro");
 
-        System.out.println("Eu")
+        System.out.println("Eu");
+
+        System.out.println("Tentando dnv");
     }
 }
