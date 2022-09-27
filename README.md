@@ -1,18 +1,39 @@
-## Getting Started
+# TrabalhoUm-GCS
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+1) O sistema deverá permitir escolher o usuário atual a qualquer momento. Cada usuário tem um
+identificador, um nome e o seu tipo: médico, paciente ou administrador.
 
-## Folder Structure
+2) O sistema deverá permitir a um médico incluir uma nova autorização de exame (não é necessário
+implementar edição ou exclusão). Cada autorização de exame tem um código numérico sequencial,
+uma data de cadastro, o médico solicitante, o paciente e o exame solicitado (ex. RaioX, Tomografia
+etc). Cada autorização permite apenas 1 exame.
+  a) Todos os campos devem ser preenchidos via seleção (textual ou visual) e não via digitação de
+texto puro (ou seja, tecnicamente devem se referir aos objetos em memória e não ser apenas
+texto puro).
+  b) A lista de exames é fixa e deve conter pelo menos 10 tipos diferentes.
+3) O sistema deverá permitir a um médico listar todas as autorizações de exame filtrando por paciente
+ou por tipo de exame. Listar sempre ordenado pela data.
 
-The workspace contains two folders by default, where:
+4) O sistema deverá permitir a um paciente marcar um exame como realizado, adicionando a data em
+que foi realizado.
+  a) O sistema não deve permitir essa operação se a data informada for anterior à da solicitação ou
+for posterior a 30 dias da solicitação.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+5) O sistema deverá permitir a um paciente listar as suas autorizações de exame, ordenadas pela data.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+6) O sistema deverá permitir a um administrador incluir um novo usuário (médico, paciente ou outro
+administrador).
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+7) O sistema deverá permitir ao administrador buscar um médico ou paciente por parte de seu nome e
+listar as autorizações daquele usuário.
 
-## Dependency Management
+8) O sistema deverá permitir ao administrador ver estatísticas gerais contendo:
+  a) Número de médicos ###
+  b) Número de pacientes ###
+  c) Número de autorizações emitidas
+  d) Percentual de autorizações com exames já realizados
+  
+9) Duas funcionalidades a mais, à escolha do grupo.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+# FUNCIONALIDADES EXTRAS!
+1) 
